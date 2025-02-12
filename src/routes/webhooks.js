@@ -24,7 +24,6 @@ router.get("/", (req, res) => {
   res.json(webhooks);
 });
 
-// Register a new webhook
 router.post("/", (req, res) => {
   const { url, event } = req.body;
 
